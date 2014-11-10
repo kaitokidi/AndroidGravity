@@ -222,7 +222,12 @@ int main(int argc, const char* argv[]){
 		window.draw(text, sf::BlendAlpha);
 	}
 	window.draw(r);
-	window.draw(pj, sf::BlendAlpha);
+		sf::VertexArray pj_top(sf::Triangles, 3);
+		sf::VertexArray pj_bot(sf::Triangles, 3);
+		pj_top[0] = pj[0]; pj_top[1] = pj[1]; pj_top[2] = pj[3];
+		pj_bot[0] = pj[1]; pj_bot[1] = pj[2]; pj_bot[2] = pj[3]; 
+	window.draw(pj_top, sf::BlendAlpha);
+	window.draw(pj_bot, sf::BlendAlpha);
 	window.display();
     }
 }
