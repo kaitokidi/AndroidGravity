@@ -1,5 +1,5 @@
-/home/VGASMB/kaito/SFML/examples/android2/obj/local/armeabi/objs/sfml-example/main.o: \
- /home/VGASMB/kaito/SFML/examples/android2/jni/main.cpp \
+/home/VGASMB/kaito/vgafib-home/Git/GitBlinky/AndroidGravity/obj/local/armeabi/objs/sfml-example/main.o: \
+ /home/VGASMB/kaito/vgafib-home/Git/GitBlinky/AndroidGravity/jni/main.cpp \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/map \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
@@ -69,6 +69,8 @@
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm/signal.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
+ /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/ucontext.h \
+ /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/user.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sched.h \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/locale.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/locale.h \
@@ -292,6 +294,10 @@
 /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h:
 
 /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h:
+
+/home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/ucontext.h:
+
+/home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/user.h:
 
 /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sched.h:
 

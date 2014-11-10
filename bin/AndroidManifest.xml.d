@@ -1,2 +1,2 @@
-/home/VGASMB/kaito/SFML/examples/android2/bin/AndroidManifest.xml : \
-/home/VGASMB/kaito/SFML/examples/android2/AndroidManifest.xml \
+/home/VGASMB/kaito/vgafib-home/Git/GitBlinky/AndroidGravity/bin/AndroidManifest.xml : \
+/home/VGASMB/kaito/vgafib-home/Git/GitBlinky/AndroidGravity/AndroidManifest.xml \
