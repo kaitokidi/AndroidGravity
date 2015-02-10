@@ -1,5 +1,5 @@
-/home/VGASMB/kaito/vgafib-home/Git/GitBlinky/AndroidGravity/obj/local/armeabi/objs/sfml-example/main.o: \
- /home/VGASMB/kaito/vgafib-home/Git/GitBlinky/AndroidGravity/jni/main.cpp \
+/home/VGASMB/kaito/vgafib-home/Git/GitInky/AndroidGravity/obj/local/armeabi/objs/sfml-example/main.o: \
+ /home/VGASMB/kaito/vgafib-home/Git/GitInky/AndroidGravity/jni/main.cpp \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/map \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
@@ -33,6 +33,9 @@
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
+ /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
+ /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
+ /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/math.h \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
@@ -69,8 +72,6 @@
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm/signal.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
- /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/ucontext.h \
- /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/user.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sched.h \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/locale.h \
  /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/locale.h \
@@ -86,6 +87,7 @@
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/istream \
+ /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/fstream \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iostream \
  /home/VGASMB/kaito/android/ndk/sources/sfml/include/SFML/Window.hpp \
  /home/VGASMB/kaito/android/ndk/sources/sfml/include/SFML/System.hpp \
@@ -223,6 +225,12 @@
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
 
+/home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
+
+/home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h:
+
+/home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/math.h:
+
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string:
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio:
@@ -295,10 +303,6 @@
 
 /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h:
 
-/home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/ucontext.h:
-
-/home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sys/user.h:
-
 /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/sched.h:
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/locale.h:
@@ -328,6 +332,8 @@
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/bitset:
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/istream:
+
+/home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/fstream:
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iostream:
 
