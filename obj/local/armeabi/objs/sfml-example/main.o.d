@@ -33,9 +33,6 @@
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
- /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
- /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
- /home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/math.h \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
@@ -87,7 +84,6 @@
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/istream \
- /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/fstream \
  /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iostream \
  /home/VGASMB/kaito/android/ndk/sources/sfml/include/SFML/Window.hpp \
  /home/VGASMB/kaito/android/ndk/sources/sfml/include/SFML/System.hpp \
@@ -225,12 +221,6 @@
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
 
-/home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
-
-/home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h:
-
-/home/VGASMB/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/math.h:
-
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string:
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio:
@@ -332,8 +322,6 @@
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/bitset:
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/istream:
-
-/home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/fstream:
 
 /home/VGASMB/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iostream:
 
