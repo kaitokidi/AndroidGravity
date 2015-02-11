@@ -182,7 +182,8 @@ int main(int argc, const char* argv[]){
                 float deltaAux = 0.0;
                 r.setOrigin(r.getSize().x/2, r.getSize().y/2);
                 r.move(r.getSize().x/2, r.getSize().y/2);
-                while(t < 3){
+                int maxT = 3;
+                while(t < maxT){
                     while(window.pollEvent(event)) {
                         if (event.type == sf::Event::Closed) window.close();
                         if (event.type == sf::Event::Resized) {window.setSize(sf::Vector2u(event.size.width, event.size.height)); needshiet = true;}
@@ -190,8 +191,8 @@ int main(int argc, const char* argv[]){
                     r.setOutlineThickness(0);
                     deltaAux = c.restart().asSeconds();
                     t += deltaAux;
-                    r.setRotation(360/3*t);
-                    r.setScale(1-t/3,1-t/3);
+                    r.setRotation(360/maxT*t);
+                    r.setScale(1-t/maxT,1-t/maxT);
                     r.setFillColor(sf::Color(83*t, 83*t, 83*t));
                 window.draw(bSprite);
                 for(int i = 0; i < str.size(); ++i) {
