@@ -86,6 +86,7 @@ int main(int argc, const char* argv[]){
                 v.y = (int)window.getSize().y/2 * -1;
               }
           }
+
         if(pantalla < 2) r.move(v*3.0f * deltatime);
         else r.move(v * deltatime);
         if(r.getPosition().y < 0) {v.y += g*deltatime;}
@@ -152,8 +153,8 @@ int main(int argc, const char* argv[]){
         int qtty = 0;
         int min = 99999999;
         if(colorsColiding[sf::Color::White] != sf::seconds(0.0) || reboot){
-            for (std::map<sf::Color, sf::Time>::iterator it=colorsColiding.begin(); it!=colorsColiding.end(); ++it){
-                int num = (int)(it->second).asSeconds();
+            for (std::map<std::string, int>::iterator it=colorTimers.begin(); it!=colorTimers.end(); ++it){
+                int num = (int)(it->second);
                 if(num > 0) {
                     if(num > max) max = num; if(num < min) min = num;
                     ++qtty;
@@ -207,7 +208,7 @@ int main(int argc, const char* argv[]){
                     window.display();
                     timer.restart();
                 }
-                
+
                 if(!reboot) ++pantalla;
                 needshiet = true;
                 reboot = false;
