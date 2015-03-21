@@ -17,3 +17,9 @@ for Linux users (http://www.sfml-dev.org/tutorials/2.1/start-linux.php),
 and for MAC OS (http://www.sfml-dev.org/tutorials/2.1/start-osx.php) .
 
 Also it is compiled using the android NDK and the special Developement features of SFML for Android.
+
+
+cd jni
+ndk-build
+cd ..
+ant debug install
