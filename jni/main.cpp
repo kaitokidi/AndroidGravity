@@ -2,15 +2,13 @@
 #include <map>
 #include <cmath>
 #include <string>
-#include <sstream>   
-//#include <fstream>
+#include <sstream>
 #include <iostream>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
 #include "button.h"
 #include "menu2.hpp"
-//#include "Effect.hpp"
 #include "Portada.hpp"
 #include "LevelMenu.hpp"
 
@@ -37,6 +35,7 @@ int main(){
     r.setPosition(1,1); r.setFillColor(sf::Color::White);
     
     Portada p;
+    Button button;
     
     sf::Image bimg;
     sf::Clock timer;
@@ -49,8 +48,9 @@ int main(){
     text.setFont(font); text.setPosition(0,0); text.setString("penguin <3");
     text.setColor(sf::Color(255,255,255));
     
+    std::string path;
     std::map<sf::Color, sf::Time> colorsColiding;
-
+    
     int pantalla = 0;
     float deltatime = 0;
     float boardTime = 0;
@@ -59,7 +59,6 @@ int main(){
     float g = (int)screenSize.y*2 ;
     float ground = screenSize.y-4; //  float ground = screenSize.y*6/7;
     
-    Button button;
     
     //GAME LOOP
     while(window.isOpen()){
@@ -73,8 +72,9 @@ int main(){
             std::stringstream s;
             s << "board" << pantalla;       
             std::string board = s.str();
-            if(!bimg.loadFromFile("res/"+board+".png")) std::cerr << "I CAN'T LOAD BOARD image" << std::endl;
-            if(!bTex.loadFromFile("res/"+board+".png")) std::cerr << "I CAN'T LOAD BOARD texture" << std::endl;
+            path = "res/"+board+".png";
+            if(!bimg.loadFromFile(path)) std::cerr << "I CAN'T LOAD BOARD image" << std::endl;
+            if(!bTex.loadFromFile(path)) std::cerr << "I CAN'T LOAD BOARD texture" << std::endl;
             bSprite.setTexture(bTex, true);
             bSprite.setScale(screenSize.x/bSprite.getLocalBounds().width , 
                             screenSize.y/bSprite.getLocalBounds().height);
@@ -311,7 +311,7 @@ int main(){
                             
                     
                     bimg.setPixel(0,0,sf::Color(250,bestTime,bestScore));
-                    
+                    bimg.saveToFile(path);
                     ++pantalla;
                 }
                 needshiet = true;
