@@ -33,6 +33,9 @@
  /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
  /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
  /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
+ /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
+ /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
+ /home/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/math.h \
  /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string \
  /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
  /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
@@ -153,7 +156,12 @@
  /home/kaito/android/ndk/sources/sfml/include/SFML/Graphics/RectangleShape.hpp \
  /home/kaito/android/ndk/sources/sfml/include/SFML/Graphics/ConvexShape.hpp \
  /home/kaito/android/ndk/sources/sfml/include/SFML/Graphics/Sprite.hpp \
- /home/kaito/android/ndk/sources/sfml/include/SFML/Graphics/Text.hpp
+ /home/kaito/android/ndk/sources/sfml/include/SFML/Graphics/Text.hpp \
+ /home/kaito/Escriptori/GitProjects/AndroidGravity/jni/button.h \
+ /home/kaito/Escriptori/GitProjects/AndroidGravity/jni/menu2.hpp \
+ /home/kaito/Escriptori/GitProjects/AndroidGravity/jni/Portada.hpp \
+ /home/kaito/Escriptori/GitProjects/AndroidGravity/jni/LevelMenu.hpp \
+ /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/fstream
 
 /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/map:
 
@@ -220,6 +228,12 @@
 /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
 
 /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
+
+/home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
+
+/home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h:
+
+/home/kaito/android/ndk/platforms/android-9/arch-arm/usr/include/math.h:
 
 /home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string:
 
@@ -462,3 +476,13 @@
 /home/kaito/android/ndk/sources/sfml/include/SFML/Graphics/Sprite.hpp:
 
 /home/kaito/android/ndk/sources/sfml/include/SFML/Graphics/Text.hpp:
+
+/home/kaito/Escriptori/GitProjects/AndroidGravity/jni/button.h:
+
+/home/kaito/Escriptori/GitProjects/AndroidGravity/jni/menu2.hpp:
+
+/home/kaito/Escriptori/GitProjects/AndroidGravity/jni/Portada.hpp:
+
+/home/kaito/Escriptori/GitProjects/AndroidGravity/jni/LevelMenu.hpp:
+
+/home/kaito/android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/fstream:
