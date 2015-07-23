@@ -311,7 +311,10 @@ int main(){
                             
                     
                     bimg.setPixel(0,0,sf::Color(250,bestTime,bestScore));
-                    bimg.saveToFile(path);
+                    if(!bimg.saveToFile(path)){
+                        //NO PUTO FUNCIONA
+                        //p.display(&window, "res/credits.png"); 
+                    }
                     ++pantalla;
                 }
                 needshiet = true;
