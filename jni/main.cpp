@@ -98,6 +98,7 @@ int main(){
         //effect.update(deltatime);
         
         sf::Event event;
+        if(window.hasFocus()) 
         while(window.pollEvent(event)) {
             button.handleEvent(event);
             if (event.type == sf::Event::Closed) window.close(); 
@@ -231,10 +232,10 @@ int main(){
                 std::string strn = oss.str();
                 if(!reboot) str = "Well Done! score = " + strn; //text.setString("YouWonTheGame!   punctuation = " + strn);
                 else str = " Nice try! ";                                   //text.setString(" Nice try!");
-                window.clear();
-                window.draw(bSprite);
-                //window.draw(r);
-                //window.display();
+                if(window.hasFocus()) window.clear();
+                if(window.hasFocus()) window.draw(bSprite);
+                //if(window.hasFocus()) window.draw(r);
+                //if(window.hasFocus()) window.display();
                 
                 sf::Clock c; 
                 int maxT = 3;
@@ -245,6 +246,7 @@ int main(){
                 
                 //MAKE THE ANIMATION TO CHANGE TO THE NEXT LVL
                 while(t < maxT){ 
+                    if(window.hasFocus())
                     while(window.pollEvent(event)) {
                         //button.handleEvent(event);
                         if (event.type == sf::Event::Closed) { window.close(); exit(0);}
@@ -257,19 +259,19 @@ int main(){
                     r.setRotation(360/maxT*t);
                     r.setScale(1-t/maxT,1-t/maxT);
                     r.setFillColor(sf::Color(83*t, 83*t, 83*t));
-                    window.draw(bSprite);
+                    if(window.hasFocus()) window.draw(bSprite);
                     if(pantalla >= 2){ //IN THE CASE OF COVER AND INSTRUCTIONS
                         for(int i = 0; i < str.size(); ++i) {
                             text.setString(str[i]);
                             textBg.setString(str[i]);
                             text.setPosition(text.getCharacterSize()*i, 0);
                             textBg.setPosition(text.getCharacterSize()*i, 0);
-                            window.draw(textBg, sf::BlendAlpha);
-                            window.draw(text, sf::BlendAlpha);
+                            if(window.hasFocus()) window.draw(textBg, sf::BlendAlpha);
+                            if(window.hasFocus()) window.draw(text, sf::BlendAlpha);
                         }
                     }
-                    window.draw(r);
-                    window.display();
+                    if(window.hasFocus())window.draw(r);
+                    if(window.hasFocus()) window.display();
                     timer.restart();
                 }
                 //IF IT IS A NEW LEVEL (NOT REBOOT)
@@ -324,27 +326,27 @@ int main(){
             
         }
         else{
-            window.clear();
-            window.draw(bSprite);
-            window.draw(r);
-            window.draw(pj, sf::BlendAlpha);
+            if(window.hasFocus()) window.clear();
+            if(window.hasFocus()) window.draw(bSprite);
+            if(window.hasFocus()) window.draw(r);
+            if(window.hasFocus()) window.draw(pj, sf::BlendAlpha);
             if(pantalla < 2) button.draw(window);
             else for(int i = 0; i < str.size(); ++i) {
                 text.setString(str[i]);
                 textBg.setString(str[i]);
                 text.setPosition(text.getCharacterSize()/1.5*i, 0);
                 textBg.setPosition(text.getCharacterSize()/1.5*i, 0);
-                window.draw(textBg, sf::BlendAlpha);
-                window.draw(text, sf::BlendAlpha);
+                if(window.hasFocus()) window.draw(textBg, sf::BlendAlpha);
+                if(window.hasFocus()) window.draw(text, sf::BlendAlpha);
             }
-            //window.draw(bSprite);
+            //if(window.hasFocus()) window.draw(bSprite);
             sf::VertexArray pj_top(sf::Triangles, 3);
             sf::VertexArray pj_bot(sf::Triangles, 3);
             pj_top[0] = pj[0]; pj_top[1] = pj[1]; pj_top[2] = pj[3];
             pj_bot[0] = pj[1]; pj_bot[1] = pj[2]; pj_bot[2] = pj[3];
-            window.draw(pj_top, sf::BlendAlpha);
-            window.draw(pj_bot, sf::BlendAlpha);
-            window.display();
+            if(window.hasFocus()) window.draw(pj_top, sf::BlendAlpha);
+            if(window.hasFocus()) window.draw(pj_bot, sf::BlendAlpha);
+            if(window.hasFocus()) window.display();
         }
     }
 }
